@@ -78,8 +78,9 @@ The repo includes a pre-built database (`pokieticker.db`) with historical data, 
 git clone https://github.com/owengetinfo-design/PokieTicker.git
 cd PokieTicker
 
-# Unpack the pre-built database
+# Unpack the pre-built database and models
 gunzip -k pokieticker.db.gz
+tar xzf models.tar.gz -C backend/ml/
 
 # Backend (Python 3.10+)
 python -m venv venv
